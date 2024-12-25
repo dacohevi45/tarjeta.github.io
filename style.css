@@ -8,6 +8,8 @@
     box-sizing: border-box;
 }
 body{
+    display: flex;
+    justify-content: center;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     background-color: antiquewhite;
@@ -20,10 +22,10 @@ body{
 
 /*contenedor*/
 .contenedor-principal{
-    border: 2px solid;
+    border: 2px;
     width: 325px;
     margin: 87px auto 40px;
-    border-radius: 3px;
+    border-radius: 10px;
     overflow: hidden;
 }
 /*elemento articulo*/
@@ -34,11 +36,13 @@ body{
 }
 /*ide del articulo*/
 #ib-estudios{
-    background-color: var(--grisIntento);
+    background-color: white;
 }
 /*imagen*/
 img{
     margin-bottom: 36px;
+    width: 100%;
+    height: 380px;
 }
 /*titutlo*/
 h2{
@@ -47,16 +51,64 @@ h2{
     color: black;
     text-transform: uppercase;
     margin-bottom: 25px;
+    text-align: center;
 }
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:944px) {
-
+/*texto*/
+p{
+    color: black;
+    line-height: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+button{
+    width: 148px;
+    height: 46px;
+    border-radius: 45px;
+    border-style: none;
+    background: var(--grisIntento);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*id button*/
+#botonera{
+    color: black;
+    width: 148px;
+    height: 46px;
+    border-radius: 45px;
+    border: none;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    display: flex; /* Necesario para alinear el texto dentro del botón */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+}
+#botonera a{
+    text-decoration: none;
+    color: black;
+    font-size: inherit;
+    font-family: inherit;
+    display: block;
+}
+/*efectos hover en boton*/
+button:hover{
+    cursor: pointer;
+    border: 14px;
+}
+#botonera:hover{
+    background-color: var(--grisIntento);
+    color: black;
 }
